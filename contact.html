@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Beauty Store</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            background-color: #fff;
+            color: #333;
+        }
+
+        .top-bar {
+            background-color: #ffebf2;
+            color: #e91e63;
+            text-align: center;
+            padding: 8px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 15px 60px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            flex-wrap: wrap;
+        }
+
+        .navbar .logo {
+            font-size: 26px;
+            font-weight: bold;
+            color: #e91e63;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+        }
+
+        .navbar ul li {
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .navbar ul li a:hover {
+            color: #e91e63;
+        }
+
+        .navbar .shop-btn {
+            background-color: #e91e63;
+            color: white;
+            padding: 8px 18px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+            font-size: 14px;
+            white-space: nowrap;
+        }
+
+        .navbar .shop-btn:hover {
+            background-color: #d81b60;
+        }
+
+        .contact {
+            padding: 60px 20px;
+            background-color: #fff6f9;
+            text-align: center;
+        }
+
+        .contact h1 {
+            color: #e91e63;
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+
+        .contact p {
+            margin-bottom: 40px;
+            color: #555;
+            font-size: 17px;
+        }
+
+        form {
+            background-color: white;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+            text-align: left;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0 20px 0;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            font-family: 'Times New Roman', serif;
+            font-size: 15px;
+            resize: none;
+        }
+
+        form button {
+            background-color: #e91e63;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+            width: 100%;
+        }
+
+        form button:hover {
+            background-color: #c2185b;
+        }
+
+        footer {
+            background-color: #ffe4ec;
+            text-align: center;
+            padding: 20px;
+            color: #555;
+            font-size: 14px;
+            margin-top: 60px;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+                padding: 10px 20px;
+            }
+
+            .navbar ul {
+                flex-direction: column;
+                padding: 10px 0;
+            }
+
+            .navbar ul li {
+                margin: 8px 0;
+            }
+
+            .navbar .shop-btn {
+                margin-top: 8px;
+                font-size: 14px;
+                padding: 6px 14px;
+            }
+
+            .contact h1 {
+                font-size: 26px;
+            }
+
+            form {
+                padding: 20px;
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        💌 Butuh Bantuan? Hubungi Kami Sekarang!
+    </div>
+
+    <div class="navbar">
+        <div class="logo">Beauty Store</div>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="products.html">Produk</a></li>
+            <li><a href="about.html">Tentang</a></li>
+            <li><a href="contact.html" style="color:#e91e63;">Kontak</a></li>
+        </ul>
+        <a href="#" class="shop-btn">Shop Now</a>
+    </div>
+
+    <div class="contact">
+        <h1>Hubungi Kami</h1>
+        <p>Isi formulir di bawah ini dan kami akan segera menghubungimu 💕</p>
+
+        <form action="#" method="post">
+            <input type="text" name="nama" placeholder="Nama Lengkap" required>
+            <input type="email" name="email" placeholder="Alamat Email" required>
+            <textarea name="pesan" rows="5" placeholder="Tulis pesanmu di sini..." required></textarea>
+            <button type="submit">Kirim Pesan</button>
+        </form>
+    </div>
+
+    <footer>
+        Beauty Store 💖
+    </footer>
+</body>
+</html>
